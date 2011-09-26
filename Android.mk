@@ -16,10 +16,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := hsqldb-2.0.0
 LOCAL_MODULE_TAGS := optional
 LOCAL_IS_HOST_MODULE := true
-LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := hsqldb-2.0.0:lib/hsqldb.jar
+LOCAL_PREBUILT_JAVA_LIBRARIES := hsqldb-2.0.0:lib/hsqldb.jar hsqldb-sqltool-2.0.0:lib/sqltool.jar
 
 include $(BUILD_MULTI_PREBUILT)
-
